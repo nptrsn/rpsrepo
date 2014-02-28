@@ -1,0 +1,10 @@
+<h1> Welcome to Rock Paper Scissors</h1>
+<% @rockpaperscissors.each do |rockpaperscissor| %>
+	<% rockpaperscissor.name %>
+	<% rockpaperscissor.win %>
+	<% rockpaperscissor.lose %>
+	<% rockpaperscissor.tie %>
+	<%= link_to "Rock", rockpaperscissor_path(1) %>
+	<%= link_to "Paper", rockpaperscissor_path(2) %>
+	<%= link_to "Scissors", rockpaperscissor_path(3) %>
+<% end %>
